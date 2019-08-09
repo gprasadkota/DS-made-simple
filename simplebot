@@ -1,0 +1,26 @@
+# simple bot for beginners to start
+
+import random
+
+greetings1 = ['Hi','hi','Hello','hello','Hola','hey']
+random_greetings1 = random.choice(greetings1)
+
+greetings2 = ['good morning','good day']
+random_greetings2 = random.choice(greetings2)
+
+question = ['how are you','how are you doing']
+responses = ['I am good','I am fine']
+random_responses = random.choice(responses)
+
+
+
+while True:
+    userinput = input()
+    if userinput in greetings1:
+        print (random_greetings1)
+    elif userinput in greetings2:
+        print (random_greetings2)
+    elif userinput in question:
+        print(random_responses)
+    else:
+        print("Please rephrase your question")
